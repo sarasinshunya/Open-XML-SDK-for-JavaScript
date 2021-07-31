@@ -283,31 +283,32 @@
             var theContent = doc.saveToBase64();
             return theContent;
         }
-
-        JsDownload.create('jsdownload', {
-            data: function () {
-                return createDocument();
-            },
-            filename: function () {
-                return "Test.docx";
-            },
-            dataType: "base64",
-            onComplete: function () {
-                /* alert('Saved'); */
-            },
-            onCancel: function () {
-                alert('Canceled');
-            },
-            onError: function () {
-                alert('Empty file, not saved');
-            },
-            swf: 'media/JsDownload.swf',
-            downloadImage: 'images/download.png',
-            width: 100,
-            height: 30,
-            transparent: true,
-            append: false
-        });
+	console.log(createDocument());
+	    
+//         JsDownload.create('jsdownload', {
+//             data: function () {
+//                 return createDocument();
+//             },
+//             filename: function () {
+//                 return "Test.docx";
+//             },
+//             dataType: "base64",
+//             onComplete: function () {
+//                 /* alert('Saved'); */
+//             },
+//             onCancel: function () {
+//                 alert('Canceled');
+//             },
+//             onError: function () {
+//                 alert('Empty file, not saved');
+//             },
+//             swf: 'media/JsDownload.swf',
+//             downloadImage: 'images/download.png',
+//             width: 100,
+//             height: 30,
+//             transparent: true,
+//             append: false
+//         });
     }());
 
 </script>
